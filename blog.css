@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Lora", serif;
+    color: #473144;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 1rem;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #AF1B3F;
+}
+
+/* Article styling from JS */
+p {
+    text-align: left;
+    color: #473144;
+    position: relative;
+    top: 100px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+h5 {
+    text-align: center;
+    color: #473144;
+    font-size: 20px;
+    padding: 25px;
+}
+
+
+/* Media Queries  */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    nav li {
+        padding: 0.5rem 0;
+    }
+}
